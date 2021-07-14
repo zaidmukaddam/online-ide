@@ -10,7 +10,7 @@
         "server": "nodemon server.js",
         "app": "npm start --prefix app",
         "dev": "concurrently \"npm start\" \"npm run app\"",
-        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix app && npm run build --prefix app"
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix app && npm run build --prefix app"
     },
     "author": "Zaid Mukaddam",
     "license": "MIT",
